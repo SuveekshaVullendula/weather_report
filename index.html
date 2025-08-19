@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Report</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>🌤️ Weather Report</h1>
+    <form id="weatherForm">
+      <div class="inputbox">
+        <input type="text" id="cityInput" placeholder="Enter city name" required>
+      </div>
+      <button type="submit" class="btn">Get Weather</button>
+    </form>
+
+    <div id="weatherResult" class="hidden weather-card">
+      <h2>Weather in <span id="cityName"></span></h2>
+      <p id="dateTime"></p>
+      <ul>
+        <li>🌡️ Temperature: <span id="temperature"></span>°C</li>
+        <li>☁️ Weather: <span id="weatherDesc"></span></li>
+        <li>💧 Humidity: <span id="humidity"></span>%</li>
+        <li>🌬️ Wind Speed: <span id="windSpeed"></span> kmph</li>
+      </ul>
+    </div>
+
+    <p id="errorMessage" class="hidden"></p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
